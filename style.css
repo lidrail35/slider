@@ -10,12 +10,27 @@
 .array {
   width: 40px;
   height: 40px;
-  border: 1px solid greenyellow;
+  transition: 0.3s;
+}
+
+.array:hover {
+  transform: scale(1.2);
+}
+
+.array-left {
+  background-image: url('./assets/svg/arrow-left.svg');
+}
+.array-right {
+  background-image: url('./assets/svg/arrow-right.svg');
 }
 
 .view-image {
-  width: 400px;
-  height: 400px;
   border: 1px solid green;
   margin: 0 40px;
+}
+
+.visible-image {
+  display: block;
+  width: 400px;
+  height: 400px;
 }
