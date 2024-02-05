@@ -10,8 +10,8 @@ console.log('hello');
 let nowImage = 0;
 const totalImage = 5;
 
-const viewImage = document.querySelector('.view-image');
-let imageWidth = viewImage.clientWidth;
+const visibleImage = document.querySelector('.visible-image');
+let imageWidth = visibleImage.clientWidth;
 
 const leftArrow = document.querySelector('.array-left');
 const rightArrow = document.querySelector('.array-right');
@@ -30,7 +30,7 @@ leftArrow.addEventListener('click', ()=> {
 
  const setImage = nowImage => {
   console.log(nowImage);
-  viewImage.setAttribute('style', `transform: translateX(${- nowImage * imageWidth}px)`)
+  visibleImage.setAttribute('style', `transform: translateX(${- nowImage * imageWidth}px)`)
 //   imageContainer.src = pathToImage + arrImage[nowImage];
 //   console.log(nowImage);
 }
