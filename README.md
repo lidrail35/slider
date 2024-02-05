@@ -1,1 +1,3 @@
-# Any sliders
+# Any sliders 
+
+[smooth slider](https://lidrail35.github.io/slider/)
