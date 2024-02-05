@@ -15,12 +15,12 @@ const imageContainer = document.querySelector('.visible-image');
 
 leftArrow.addEventListener('click', ()=> {
   (nowImage === 0) ? nowImage = totalImage : nowImage--;
-  setImage(nowImage);
+  // setImage(nowImage);
 });
 
 rightArrow.addEventListener('click', ()=> {
   (nowImage === totalImage) ? nowImage = 0 : nowImage++
-  setImage(nowImage);
+  // setImage(nowImage);
 });
 
 const setImage = nowImage => {
