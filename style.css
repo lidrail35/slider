@@ -40,6 +40,7 @@
   /* justify-content: center; */
   border: 1px solid green;
   margin: 0 40px;
+  transition: 0.3s;
 }
 
 .visible-image {
