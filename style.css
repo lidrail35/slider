@@ -33,13 +33,17 @@
 }
 
 .visible-image {
-  display: flex;
-  flex-direction: row;
   width: 400px;
   height: 400px;
   /* justify-content: center; */
   border: 1px solid green;
   margin: 0 40px;
+  overflow: hidden;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
   transition: 0.3s;
 }
 
