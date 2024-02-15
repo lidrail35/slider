@@ -7,14 +7,15 @@ const rightArrow = document.querySelector('.array-right');
 
 leftArrow.addEventListener('click', ()=> {
   const lastChild = imageContainer.removeChild(imageContainer.children[imageContainer.children.length - 1]);
-   imageContainer.children[1].classList.toggle('center', false);
-   imageContainer.children[1].classList.toggle('rightBlock', true);
-   imageContainer.children[0].classList.toggle('leftBlock', false);
-   imageContainer.children[0].classList.toggle('center', true);
+  lastChild.classList.toggle('rightBlock', false);
+  lastChild.classList.toggle('leftBlock', true);
 
-   imageContainer.insertBefore(lastChild, imageContainer.children[0]);
-   imageContainer.children[0].classList.toggle('rightBlock', false);
-   imageContainer.children[0].classList.toggle('leftBlock', true);
+  imageContainer.children[1].classList.toggle('center', false);
+  imageContainer.children[1].classList.toggle('rightBlock', true);
+  imageContainer.children[0].classList.toggle('leftBlock', false);
+  imageContainer.children[0].classList.toggle('center', true);
+
+  imageContainer.insertBefore(lastChild, imageContainer.children[0]);
 });
 
 rightArrow.addEventListener('click', ()=> {
