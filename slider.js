@@ -17,6 +17,15 @@ leftArrow.addEventListener('click', ()=> {
    imageContainer.children[0].classList.toggle('leftBlock', true);
 });
 
- rightArrow.addEventListener('click', ()=> {
-   
- });
+rightArrow.addEventListener('click', ()=> {
+  const firstChild = imageContainer.removeChild(imageContainer.children[0]);
+  firstChild.classList.toggle('leftBlock', false);
+  firstChild.classList.toggle('rightBlock', true);
+  
+  imageContainer.children[0].classList.toggle('center', false);
+  imageContainer.children[0].classList.toggle('leftBlock', true);
+  imageContainer.children[1].classList.toggle('rightBlock', false);
+  imageContainer.children[1].classList.toggle('center', true);
+
+  imageContainer.appendChild(firstChild);
+});
