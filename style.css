@@ -10,7 +10,7 @@
 .array-box {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   gap: 100px;
 }
 
@@ -32,23 +32,31 @@
   background-image: url('./assets/svg/arrow-right.svg');
 }
 
-.visible-image {
+.image-container {
+  position: relative;
   width: 400px;
   height: 400px;
-  /* justify-content: center; */
   border: 1px solid green;
   margin: 0 40px;
-  overflow: hidden;
-}
-
-.image-container {
-  display: flex;
-  flex-direction: row;
+  /* overflow: hidden; */
   transition: 0.3s;
 }
 
 .option-image {
   display: block;
+  position: absolute;
   width: 400px;
   height: 400px;
+}
+
+.leftBlock {
+  transform: translateX(-400px);
+}
+
+.center {
+  transform: translateX(0);
+}
+
+.rightBlock {
+  transform: translateX(400px);
 }
