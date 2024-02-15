@@ -39,7 +39,7 @@
   border: 1px solid green;
   margin: 0 40px;
   /* overflow: hidden; */
-  transition: 0.3s;
+  
 }
 
 .option-image {
@@ -47,6 +47,7 @@
   position: absolute;
   width: 400px;
   height: 400px;
+  transition: 400ms linear;
 }
 
 .leftBlock {
